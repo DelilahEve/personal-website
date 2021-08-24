@@ -15,8 +15,8 @@ import styled.css
 import styled.styledDiv
 
 const val cdnPort = 8081
-const val cdnHost = "108.175.11.112"
-const val cdnUrl = "http://$cdnHost:$cdnPort/static"
+const val cdnHost = "aqua-bot.app"
+const val cdnUrl = "https://$cdnHost:$cdnPort/static"
 
 fun main() {
     window.onload = {
