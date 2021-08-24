@@ -41,7 +41,7 @@ class ThisSite : RComponent<RProps, RState>() {
                         +CommonStyles.purpleText
                     }
                     attrs {
-                        href = "https://github.com/delilaheve"
+                        href = "https://github.com/DelilahEve/personal-website"
                         target = "_blank"
                     }
                     +"my Github"
