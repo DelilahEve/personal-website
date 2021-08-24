@@ -2,7 +2,6 @@ package sections
 
 import CommonStyles
 import cdnUrl
-import kotlinx.html.js.onCanPlayFunction
 import react.RBuilder
 import react.RComponent
 import react.RProps
@@ -138,8 +137,9 @@ class Bidvine : RComponent<RProps, RState>() {
                 }
                 listOf(
                     """
-                        Fixed a very long standing bug (8+ months without a fix) that the previous dev was not able to 
-                        where opening the custom web view would crash due to an invalid Context.
+                        Fixed a very long standing bug (8+ months without a fix) where opening the custom web view 
+                        would crash the app. This turned out to be due to an invalid Context, and only happens under 
+                        extremely niche circumstances.
                     """.trimIndent(),
                     """
                         Removed every memory leak that was occurring. All of them.

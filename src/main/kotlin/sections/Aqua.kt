@@ -2,17 +2,13 @@ package sections
 
 import CommonStyles
 import cdnUrl
-import kotlinx.html.IframeSandbox
 import react.RBuilder
 import react.RComponent
 import react.RProps
 import react.RState
-import react.dom.b
-import react.dom.iframe
 import styled.css
 import styled.styledA
 import styled.styledDiv
-import styled.styledH1
 import styled.styledH2
 import styled.styledImg
 import styled.styledP

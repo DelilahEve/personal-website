@@ -1,17 +1,13 @@
 package sections
 
 import CommonStyles
-import cdnUrl
 import react.RBuilder
 import react.RComponent
 import react.RProps
 import react.RState
-import react.dom.b
 import styled.css
 import styled.styledA
 import styled.styledDiv
-import styled.styledH1
-import styled.styledImg
 import styled.styledP
 
 @JsExport

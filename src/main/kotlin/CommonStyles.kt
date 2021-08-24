@@ -57,8 +57,9 @@ object CommonStyles : StyleSheet("CommonStyles", isStatic = false) {
     /**
      * Spacing
      */
-    val headerSize by css {
-        paddingBottom = LinearDimension("10%")
+    val sectionPadding by css {
+        paddingBottom = LinearDimension("2.5%")
+        paddingTop = LinearDimension("2.5%")
     }
 
     val  tinyPadding by css {
@@ -70,7 +71,7 @@ object CommonStyles : StyleSheet("CommonStyles", isStatic = false) {
     }
 
     val smallIndent by css {
-        paddingLeft = LinearDimension("24px")
+        paddingLeft = LinearDimension("36px")
     }
 
     val largePadding by css {

@@ -3,9 +3,6 @@ import kotlinx.browser.document
 import kotlinx.browser.window
 import react.RBuilder
 import react.dom.div
-import react.router.dom.hashRouter
-import react.router.dom.route
-import react.router.dom.switch
 import sections.AboutMe
 import sections.Aqua
 import sections.Bidvine
@@ -42,7 +39,7 @@ fun RBuilder.app() {
             }
             styledDiv {
                 css {
-                    +CommonStyles.headerSize
+                    +CommonStyles.sectionPadding
                     +CommonStyles.horizontalCenter
                 }
                 child(AboutMe::class) {}
@@ -58,6 +55,7 @@ fun RBuilder.app() {
             }
             styledDiv {
                 css {
+                    +CommonStyles.sectionPadding
                     +CommonStyles.horizontalCenter
                 }
                 child(Bidvine::class) {}
@@ -73,6 +71,7 @@ fun RBuilder.app() {
             }
             styledDiv {
                 css {
+                    +CommonStyles.sectionPadding
                     +CommonStyles.horizontalCenter
                 }
                 child(Overseer::class) {}
@@ -88,6 +87,7 @@ fun RBuilder.app() {
             }
             styledDiv {
                 css {
+                    +CommonStyles.sectionPadding
                     +CommonStyles.horizontalCenter
                 }
                 child(Aqua::class) {}
@@ -103,6 +103,7 @@ fun RBuilder.app() {
             }
             styledDiv {
                 css {
+                    +CommonStyles.sectionPadding
                     +CommonStyles.horizontalCenter
                 }
                 child(ThisSite::class) {}
