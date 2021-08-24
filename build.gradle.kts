@@ -37,3 +37,8 @@ kotlin {
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.js.ExperimentalJsExport"
 }
+
+// Heroku Deployment
+tasks.register("stage") {
+    dependsOn("build")
+}
