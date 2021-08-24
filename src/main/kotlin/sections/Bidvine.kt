@@ -2,6 +2,7 @@ package sections
 
 import CommonStyles
 import cdnUrl
+import kotlinx.html.js.onCanPlayFunction
 import react.RBuilder
 import react.RComponent
 import react.RProps
@@ -192,8 +193,8 @@ class Bidvine : RComponent<RProps, RState>() {
                 }
                 attrs {
                     src = video
-                    autoPlay = true
                     autoBuffer = true
+                    autoPlay = true
                     loop = true
                     width = "235px"
                 }

@@ -14,9 +14,9 @@ import sections.ThisSite
 import styled.css
 import styled.styledDiv
 
-const val cdnPort = 8081
-const val cdnHost = "aqua-bot.app"
-const val cdnUrl = "https://$cdnHost:$cdnPort/static"
+const val cdnPort = 7226
+const val cdnHost = "ovd.app"
+const val cdnUrl = "https://$cdnHost:$cdnPort/public/delilaheve"
 
 fun main() {
     window.onload = {
