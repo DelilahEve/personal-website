@@ -13,11 +13,13 @@ object CommonStyles : StyleSheet("CommonStyles", isStatic = false) {
     val whiteText by css {
         color = Color("#bdc1c6")
     }
+
     val blackText by css {
         color = Color.black
     }
+
     val purpleText by css {
-        color = Color("#9d0de4")
+        color = Color("#c96ef7")
     }
 
     val whiteBackground by css {
@@ -28,8 +30,20 @@ object CommonStyles : StyleSheet("CommonStyles", isStatic = false) {
         backgroundColor = Color("#202124")
     }
 
+    val purpleBackground by css {
+        backgroundColor = Color("#9d0de4")
+    }
+
+    val lightPurpleBackground by css {
+        backgroundColor = Color("#c96ef7")
+    }
+
     val linkStyle by css {
         textDecoration = TextDecoration.none
+    }
+
+    val roundedCorners by css {
+        borderRadius = LinearDimension("8px")
     }
 
     // Dynamic font size

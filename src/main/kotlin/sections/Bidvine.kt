@@ -192,6 +192,7 @@ class Bidvine : RComponent<RProps, RState>() {
                 attrs {
                     src = video
                     autoPlay = true
+                    autoBuffer = true
                     loop = true
                     width = "235px"
                 }

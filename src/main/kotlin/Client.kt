@@ -14,13 +14,9 @@ import sections.ThisSite
 import styled.css
 import styled.styledDiv
 
-const val debug = true
-
 const val cdnPort = 8081
-val cdnUrl = when (debug) {
-    true -> "http://localhost:$cdnPort/static"
-    false -> "http://delilaheve.ca:$cdnPort/static"
-}
+const val cdnHost = "108.175.11.112"
+const val cdnUrl = "http://$cdnHost:$cdnPort/static"
 
 fun main() {
     window.onload = {

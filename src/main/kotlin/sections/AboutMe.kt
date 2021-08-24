@@ -105,5 +105,40 @@ class AboutMe : RComponent<RProps, RState>() {
                 }
             }
         }
+        styledDiv {
+            css {
+                +CommonStyles.largePadding
+                +CommonStyles.centerText
+            }
+            styledA {
+                css {
+                    +CommonStyles.linkStyle
+                }
+                attrs {
+                    href = "https://docs.google.com/document/d/1ZOKGfnO8ZHjMA5K834r9iQ2npZV5a5a7/edit?usp=sharing&ouid=106415526270354877045&rtpof=true&sd=true"
+                    target = "_blank"
+                }
+                styledDiv {
+                    css {
+                        +CommonStyles.purpleBackground
+                        +CommonStyles.tinyPadding
+                        +CommonStyles.roundedCorners
+                        +CommonStyles.horizontalCenter
+                        +CommonStyles.maxWidth(220)
+                        hover {
+                            +CommonStyles.lightPurpleBackground
+                        }
+                    }
+                    styledP {
+                        css {
+                            +CommonStyles.whiteText
+                            +CommonStyles.centerText
+                            +CommonStyles.fontSize(18)
+                        }
+                        +"See my resume"
+                    }
+                }
+            }
+        }
     }
 }
