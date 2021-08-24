@@ -16,6 +16,7 @@ import styled.styledP
 import styled.styledUl
 import styled.styledVideo
 
+@JsExport
 class Bidvine : RComponent<RProps, RState>() {
 
     override fun RBuilder.render() {

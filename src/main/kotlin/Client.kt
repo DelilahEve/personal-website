@@ -30,93 +30,83 @@ fun main() {
  */
 @Suppress("unchecked_cast")
 fun RBuilder.app() {
-    hashRouter {
-        switch {
-            /* Currently allows all url paths to match as there's only one page
-             * however, this could change in future.
-             */
-            route("/", exact = false) {
-                div {
-                    /*
-                     * About me section
-                     *
-                     * includes links to Github and Resume
-                     */
-                    styledDiv {
-                        css {
-                            +CommonStyles.blackBackground
-                        }
-                        styledDiv {
-                            css {
-                                +CommonStyles.headerSize
-                                +CommonStyles.horizontalCenter
-                            }
-                            child(AboutMe::class) {}
-                        }
-                    }
-
-                    /*
-                     * Detailing my time at Bidvine
-                     */
-                    styledDiv {
-                        css {
-                            +CommonStyles.whiteBackground
-                        }
-                        styledDiv {
-                            css {
-                                +CommonStyles.horizontalCenter
-                            }
-                            child(Bidvine::class) {}
-                        }
-                    }
-
-                    /*
-                     * Detailing my passion project Overseer
-                     */
-                    styledDiv {
-                        css {
-                            +CommonStyles.blackBackground
-                        }
-                        styledDiv {
-                            css {
-                                +CommonStyles.horizontalCenter
-                            }
-                            child(Overseer::class) {}
-                        }
-                    }
-
-                    /*
-                     * Detailing my discord bot Aqua
-                     */
-                    styledDiv {
-                        css {
-                            +CommonStyles.whiteBackground
-                        }
-                        styledDiv {
-                            css {
-                                +CommonStyles.horizontalCenter
-                            }
-                            child(Aqua::class) {}
-                        }
-                    }
-
-                    /*
-                     * Detailing this website :o
-                     */
-                    styledDiv {
-                        css {
-                            +CommonStyles.blackBackground
-                        }
-                        styledDiv {
-                            css {
-                                +CommonStyles.horizontalCenter
-                            }
-                            child(ThisSite::class) {}
-                        }
-                    }
-                }
+    div {
+        /*
+         * About me section
+         *
+         * includes links to Github and Resume
+         */
+        styledDiv {
+            css {
+                +CommonStyles.blackBackground
             }
+            styledDiv {
+                css {
+                    +CommonStyles.headerSize
+                    +CommonStyles.horizontalCenter
+                }
+                child(AboutMe::class) {}
+            }
+        }
 
+        /*
+         * Detailing my time at Bidvine
+         */
+        styledDiv {
+            css {
+                +CommonStyles.whiteBackground
+            }
+            styledDiv {
+                css {
+                    +CommonStyles.horizontalCenter
+                }
+                child(Bidvine::class) {}
+            }
+        }
+
+        /*
+         * Detailing my passion project Overseer
+         */
+        styledDiv {
+            css {
+                +CommonStyles.blackBackground
+            }
+            styledDiv {
+                css {
+                    +CommonStyles.horizontalCenter
+                }
+                child(Overseer::class) {}
+            }
+        }
+
+        /*
+         * Detailing my discord bot Aqua
+         */
+        styledDiv {
+            css {
+                +CommonStyles.whiteBackground
+            }
+            styledDiv {
+                css {
+                    +CommonStyles.horizontalCenter
+                }
+                child(Aqua::class) {}
+            }
+        }
+
+        /*
+         * Detailing this website :o
+         */
+        styledDiv {
+            css {
+                +CommonStyles.blackBackground
+            }
+            styledDiv {
+                css {
+                    +CommonStyles.horizontalCenter
+                }
+                child(ThisSite::class) {}
+            }
         }
     }
 }

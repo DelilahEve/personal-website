@@ -17,6 +17,7 @@ import styled.styledH2
 import styled.styledImg
 import styled.styledP
 
+@JsExport
 class Aqua : RComponent<RProps, RState>() {
 
     override fun RBuilder.render() {

@@ -14,6 +14,7 @@ import styled.styledH1
 import styled.styledImg
 import styled.styledP
 
+@JsExport
 class ThisSite : RComponent<RProps, RState>() {
 
     override fun RBuilder.render() {

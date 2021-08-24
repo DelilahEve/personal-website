@@ -17,6 +17,7 @@ import styled.styledImg
 import styled.styledP
 import styled.styledVideo
 
+@JsExport
 class Overseer : RComponent<RProps, RState>() {
 
     override fun RBuilder.render() {

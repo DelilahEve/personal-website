@@ -20,7 +20,6 @@ dependencies {
     implementation("org.jetbrains:kotlin-react-router-dom:5.2.0-pre.148-kotlin-1.4.30")
     implementation("org.jetbrains:kotlin-redux:4.0.5-pre.148-kotlin-1.4.30")
     implementation("org.jetbrains:kotlin-react-redux:7.2.2-pre.148-kotlin-1.4.30")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9")
 }
 
 kotlin {
@@ -36,9 +35,4 @@ kotlin {
 
 tasks.withType<KotlinCompile>().configureEach {
     kotlinOptions.freeCompilerArgs += "-Xopt-in=kotlin.js.ExperimentalJsExport"
-}
-
-// Heroku Deployment
-tasks.register("stage") {
-    dependsOn("build")
 }
