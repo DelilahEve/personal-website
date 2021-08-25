@@ -124,7 +124,8 @@ class Overseer : RComponent<RProps, RState>() {
                 }
                 styledVideo {
                     attrs {
-                        src = "https://i.imgur.com/xIMAGKd.mp4"
+                        set("muted", "true")
+                        src = "https://i.imgur.com/gm7Tp0k.mp4"
                         autoPlay = true
                         loop = true
                         width = "235px"

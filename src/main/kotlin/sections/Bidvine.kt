@@ -2,6 +2,7 @@ package sections
 
 import CommonStyles
 import cdnUrl
+import kotlinx.html.onCanPlay
 import react.RBuilder
 import react.RComponent
 import react.RProps
@@ -71,7 +72,7 @@ class Bidvine : RComponent<RProps, RState>() {
         }
         subSection(
             "Request Details / Bidding form",
-            "https://i.imgur.com/GdhEu3Q.mp4",
+            "https://i.imgur.com/UiriRev.mp4",
             """
                 Bidvine's bid form was originally composed of 2 views that separated the request details from the 
                 bidding form itself. This was slow, clunky, and saw professionals jumping back and forth between 
@@ -86,7 +87,7 @@ class Bidvine : RComponent<RProps, RState>() {
         )
         subSection(
             "Company Profile",
-            "https://i.imgur.com/7R1vdoF.mp4",
+            "https://i.imgur.com/VJ4MRgH.mp4",
             """
                 Bidvine allowed professionals to build a very comprehensive professional profile. One of the larger 
                 efforts I participated in was the overhaul of this view. The original appearance was plain and 
@@ -100,7 +101,7 @@ class Bidvine : RComponent<RProps, RState>() {
         )
         subSection(
             "Services management",
-            "https://i.imgur.com/Te44UGz.mp4",
+            "https://i.imgur.com/GEDdxD7.mp4",
             """
                 All kinds of services could be offered through Bidvine's platform, hundreds in fact. Rebuilding the 
                 Services view was a relatively minor, but not insignificant, task. Doing so involved converting Java 
@@ -192,11 +193,13 @@ class Bidvine : RComponent<RProps, RState>() {
                     +CommonStyles.inline
                 }
                 attrs {
+                    set("muted", "true")
                     src = video
                     autoBuffer = true
                     autoPlay = true
                     loop = true
                     width = "235px"
+                    //onCanPlay = js("this.play()")
                 }
 
             }
