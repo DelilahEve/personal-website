@@ -41,6 +41,7 @@ class Bidvine : RComponent<RProps, RState>() {
             styledDiv {
                 css {
                     +CommonStyles.smallPadding
+                    +CommonStyles.largeIndent
                     +CommonStyles.floatLeft
                     +CommonStyles.inline
                 }
@@ -208,6 +209,7 @@ class Bidvine : RComponent<RProps, RState>() {
                     +floatSide
                     +CommonStyles.inline
                     +CommonStyles.smallPadding
+                    +CommonStyles.largeIndent
                     +CommonStyles.blackText
                     +CommonStyles.fontSize(16)
                     +CommonStyles.maxWidth(500)
@@ -219,6 +221,7 @@ class Bidvine : RComponent<RProps, RState>() {
                     +floatSide
                     +CommonStyles.inline
                     +CommonStyles.smallPadding
+                    +CommonStyles.largeIndent
                     +CommonStyles.blackText
                     +CommonStyles.fontSize(16)
                     +CommonStyles.maxWidth(500)

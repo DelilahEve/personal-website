@@ -67,15 +67,23 @@ object CommonStyles : StyleSheet("CommonStyles", isStatic = false) {
     }
 
     val smallPadding by css {
-        padding = "36px"
+        paddingLeft = LinearDimension("12px")
+        paddingRight = LinearDimension("12px")
+        paddingTop = LinearDimension("36px")
+        paddingBottom = LinearDimension("36px")
+    }
+
+    val largePadding by css {
+        padding = "56px"
     }
 
     val smallIndent by css {
         paddingLeft = LinearDimension("36px")
     }
 
-    val largePadding by css {
-        padding = "56px"
+    val largeIndent by css {
+        paddingLeft = LinearDimension("36px")
+        paddingRight = LinearDimension("36px")
     }
 
     val horizontalCenter by css {

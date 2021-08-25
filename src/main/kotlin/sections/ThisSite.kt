@@ -29,8 +29,8 @@ class ThisSite : RComponent<RProps, RState>() {
                     +CommonStyles.maxWidth(650)
                 }
                 +"""
-                    Even this website is made in Kotlin! I've used KotlinJS + React to build this website, and the code 
-                    is freely available on 
+                    Even this website is made in Kotlin! I've used KotlinJS/React to build this website, Heroku to 
+                    deploy, and the code is available to view on 
                 """.trimIndent()
                 styledA {
                     css {
