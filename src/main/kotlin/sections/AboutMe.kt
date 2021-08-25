@@ -65,12 +65,41 @@ class AboutMe : RComponent<RProps, RState>() {
                         +"Expert with all things Kotlin;"
                     }
                     +"""
-                         Self taught for over 13 years,  
-                        I have experience in 9 different languages with a proficiency for Java and Kotlin.
-                        
-                        If you're interested in my skill, I've placed some of my proudest achievements 
-                        below. Scroll down to see!
+                         Over 13 years of experience in 9 different programming languages, with a proficiency for 
+                        Java and Kotlin. If you're interested in my skill set, I've placed some of my proudest 
+                        achievements below. Scroll down to see!
                     """.trimIndent()
+                }
+                styledP {
+                    css {
+                        +CommonStyles.whiteText
+                        +CommonStyles.maxWidth(500)
+                        +CommonStyles.fontSize(14)
+                    }
+                    +"Check my "
+                    styledA {
+                        css {
+                            +CommonStyles.linkStyle
+                            +CommonStyles.purpleText
+                        }
+                        attrs {
+                            href = "https://www.linkedin.com/in/delilah-carriere-0b9885200"
+                            target = "_blank"
+                        }
+                        +"LinkedIn"
+                    }
+                    +" or "
+                    styledA {
+                        css {
+                            +CommonStyles.linkStyle
+                            +CommonStyles.purpleText
+                        }
+                        attrs {
+                            href = "mailto:delilahcarriere@gmail.com"
+
+                        }
+                        +"send me an email"
+                    }
                 }
             }
         }
@@ -110,6 +139,8 @@ class AboutMe : RComponent<RProps, RState>() {
             css {
                 +CommonStyles.largePadding
                 +CommonStyles.centerText
+                +CommonStyles.horizontalCenter
+                +CommonStyles.maxWidth(220)
             }
             styledA {
                 css {
@@ -124,7 +155,6 @@ class AboutMe : RComponent<RProps, RState>() {
                         +CommonStyles.purpleBackground
                         +CommonStyles.tinyPadding
                         +CommonStyles.roundedCorners
-                        +CommonStyles.horizontalCenter
                         +CommonStyles.maxWidth(220)
                         hover {
                             +CommonStyles.lightPurpleBackground
